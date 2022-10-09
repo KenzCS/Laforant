@@ -1,0 +1,219 @@
+/* Masukin custom font*/
+/*btw kalau mau ubah, atau rapiin, kasih tau dulu yak, yang mana mana*/
+@font-face {
+    src : url(../Font/earwig\ factory\ rg.ttf);
+    font-family: persona;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.row {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* bagian css map header :D */
+header .row .header-main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+	background-color:#000000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .row .header-main .header-list ul{
+    list-style: none; /*ILANGIN TITIKNYA*/
+    padding: 0;
+    font-size: 3rem;
+}
+
+header .row .header-main .header-list ul li{
+    position: relative;   
+}
+
+header .row .header-main .header-list ul li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    z-index: +99; /*ini wa baca di g4g , gw pakein buat dia nembus di imagenya gitu,kalau ada cara lain ,tersera*/
+}
+
+header .row .header-main .header-list ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-weight: 900;
+    margin-top: 0;
+    padding: 1.8rem 3.5rem;
+    transition: .6s;
+    background-color:  #000000;
+}
+
+header .row .header-main .header-list ul li a:hover{
+    background-color:  #d30909;
+}
+
+header .row .header-main .header-list ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .6s;
+}
+
+header .row .header-main .header-list ul li ul li{
+    font-size: 2rem;
+    color: #ffffff;
+    background-color:  #000000;
+}
+
+header .row .header-main .header-logo img{
+    width: 9rem;
+    margin-right: 5rem;
+}
+
+
+/* bagian css map row 1 - 2 - 3 ( gw gabunging semua aja jadinya, soalnya kalo dipisah kayak kemarin ribet gw liatnya :V */
+
+.sec-4 .row .row-4-main{
+    background-image: url(../Maps/img/row4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60rem;
+}
+.sec-4 .row .row-4-main .row-4-sub1 h2{
+    font-size: 9rem;
+    color: white;
+    font-family: persona;
+}
+
+#T
+{
+    color: #d30909;
+}
+
+#m
+{
+    color: #d30909;
+}
+
+.sec-4 .row  .row-4-sub2{
+    position: relative;
+}
+.sec-4 .row .row-4-main .row-4-sub2 img {
+	width: 100%;
+	height: 30rem;
+}
+
+.sec-4 .row .row-4-main .row-4-sub2 p {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 2.6rem;
+	width: 50%;
+	color: #fff;
+	position: absolute;
+	top: 9rem;
+	right: 4rem;
+    font-weight: bold;
+}
+.sec-4 .row .row-4-main .row-4-sub2 p.right {
+	width: 50%;
+	position: absolute;
+	top: 8rem;
+	left: 4rem;
+}
+.sec-4 .row .row-4-main .row-4-sub2 img.circle {
+	width: 34%;
+	position: absolute;
+	top: -1.5rem;
+	left: 3rem;
+	height: 34rem;
+}
+.sec-4 .row .row-4-main .row-4-sub2 img.circle2 {
+	width: 30%;
+	position: absolute;
+	top: -2.5rem;
+	right: 9rem;
+	height: 35rem;
+}
+.sec-4 .row .row-4-sub2 {
+	position: relative;
+	width: 100%;
+}
+
+/* bagian footerr */
+.fot-main{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fot-main .fot-img img {
+	width: 12rem;
+	margin-left: 7rem;
+}
+.fot-main .fot-word p{
+    color: red;
+    font-family: persona;
+    font-size: 5rem;
+}
+.fot-main .fot-social ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin-right: 5rem;
+}
+
+.fot-main .fot-social ul li a img{
+    width: 8rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+/* RESPONSIVENYA , coba ges cek lagi f12 bisa gak, di web gw aman sih*/
+
+@media only screen and (max-width: 800px) {
+    .row {
+        width: 80rem;
+        margin: 0 auto;
+    }
+    .sec-4 .row .row-4-main .row-4-sub2 img {
+        width: 80rem;
+        height: 34rem;
+    }
+    .sec-4 .row .row-4-main .row-4-sub2 p {
+        font-size: 2rem;
+        width: 53%;
+        color: #fff;
+        top: 12rem;
+        right: 3rem;
+    }
+    .sec-4 .row .row-4-main .row-4-sub2 img.circle {
+        width: 38%;
+        top: 0.5rem;
+    }
+    .sec-4 .row .row-4-main .row-4-sub2 p.right {      
+        top: 10rem;
+
+    }
+    .sec-4 .row .row-4-main .row-4-sub2 img.circle2 {
+        width: 39%;
+        right: 3rem;
+    }
+}

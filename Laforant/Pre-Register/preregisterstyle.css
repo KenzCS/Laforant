@@ -1,0 +1,380 @@
+/* ngelink custom font */
+@font-face {
+    src : url(../Font/earwig\ factory\ rg.ttf);
+    font-family: persona;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    color: #ffffff;
+}
+
+.row {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* header */
+header .row .header-main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+	background-color:#000000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .row .header-main .header-list ul{
+    list-style: none;
+    padding: 0;
+    font-size: 3rem;
+}
+header .row .header-main .header-list ul li{
+    position: relative;
+   
+}
+header .row .header-main .header-list ul li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    z-index: +99;
+}
+header .row .header-main .header-list ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    font-weight: 900;
+    margin-top: 0;
+    padding: 1.8rem 3.5rem;
+    transition: .6s;
+    background-color:  #000000;
+}
+header .row .header-main .header-list ul li a:hover{
+    background-color:  #d30909;
+}
+
+header .row .header-main .header-list ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: .6s;
+}
+
+header .row .header-main .header-list ul li ul li{
+    font-size: 2rem;
+    color: #ffffff;
+    background-color:  #000000;
+}
+header .row .header-main .header-logo img{
+    width: 9rem;
+    margin-right: 5rem;
+}
+
+/* BAGIAN REGISTERNYA */
+.bg-img{
+    background-image: url(../Pre-Register/img/row3.png);
+}
+.reg-ingo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.reg-ingo h2{
+    font-size: 13rem;
+    color: #ffffff;
+    font-family: persona;
+}
+
+#P
+{
+    color: #d30909;
+}
+
+#R
+{
+    color: #d30909;
+}
+
+.reg-form-1{
+ text-align: center;
+}
+.reg-form-1 img.img1{
+   
+    width: 20%;
+}
+img.img7{
+    margin-top: 2rem;
+}
+.reg-form-1 img.img2{
+    width: 70%;
+    
+}
+.reg-form-1 img.img9{
+    width: 70%;
+    height: 30rem;
+}
+.form-1 {
+    position: relative;
+    top: -15rem;
+    left: 17rem;
+}
+.form-1 span{
+    font-size: 2.54rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-1 input{
+    width: 30rem;
+    height: 5rem;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2rem;
+    font-size: 2rem;
+}
+.img3{
+    height: 48rem;
+}
+.form-2 {
+	position: relative;
+	top: -30rem;
+	right: -15rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#email {
+	margin-left: 5rem;
+}
+.form-2 span{
+    font-size: 2.54rem;
+    margin-bottom: 1rem;
+}
+.form-2 input {
+	width: 30rem;
+	height: 5rem;
+	background-color:#000000;
+	margin-left: 2rem;
+	color: #ffffff;
+	padding: 2rem;
+	font-size: 2rem;
+}
+.img4{
+    height: 40rem;
+}
+.sub-form-1{
+    margin-bottom: 1rem;
+}
+.sub-class-last{
+    margin-left: -2.2rem;
+}
+.sub-form-2{
+    margin-bottom: 1rem;
+    position: relative;
+    top: -22rem;
+    left: 18rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.reg-form-1 img.img1 {
+	width: 17%;
+	margin-bottom: 7rem;
+}
+.sub-form-2 span{
+    font-size: 2.54rem;
+}
+.sub-form-2 input{
+    width: 20rem;
+    height: 5rem;
+    background-color:#000000;
+    color: #ffffff;
+    padding: 1rem;
+    font-size: 2rem;
+}
+input.last{
+    margin-left: 2.3rem;
+}
+
+.checkbox img{
+    width: 100%;
+    height: 50rem;
+}
+
+.checkbox .last-form input{
+    margin-left: 2rem;
+    font-size: 3rem;
+}
+
+.checkbox .last-form span{
+    font-size: 3rem;
+    display: inline;
+    margin-left: 4rem;
+
+}
+.last-form {
+	position: relative;
+	bottom: 36rem;
+	left: -2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BUAT REGISTER BOX NEGARA */
+.sub-form-2 select{
+    width: 20rem;
+    background-color: #000000;
+    color: #ffffff;
+    height: 3rem;
+    margin-left: 2rem;
+}
+
+
+.checkmark {
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+  }
+
+/* BUAT TOMBOL SUBMIT */
+button.submit {
+	width: 22rem;
+	height: 6rem;
+	position: relative;
+	bottom: 27rem;
+	left: -2rem;
+	right: 0;
+	font-size: 3rem;
+	font-weight: 600;
+	border-radius: 1rem;
+	cursor: pointer;
+	transition: .6s;
+	background-color: #ffffff
+}
+
+button.submit:hover{
+    background-color: #d30909;
+    color: #ffffff;
+}
+
+.fot-main{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fot-main .fot-img img {
+	width: 12rem;
+	margin-left: 7rem;
+}
+.fot-main .fot-word p{
+    color: red;
+    font-family: persona;
+    font-size: 5rem;
+}
+.fot-main .fot-social ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	margin-right: 5rem;
+}
+
+.fot-main .fot-social ul li a img{
+    width: 8rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .row {
+        width: 80rem;
+    }
+    .reg-ingo h2 {
+        font-size: 10rem;
+        padding: 4rem;
+    }
+    .reg-form-1 img.img1 {
+        width: 17%;
+    }
+    .form-1 span {
+        font-size: 1.6rem;
+    }
+    .form-1 input {
+        width: 20rem;
+        height: 2rem;
+    }
+    .form-1 {
+        top: -12rem;
+        left: 11rem;
+    }
+    .reg-form-1 img.img2 {
+        width: 78%;
+        margin-right: -4rem;
+    }
+    .reg-form-1 img.img9 {
+        width: 70%;
+        height: 23rem;
+    }
+    .img3 {
+        height: 30rem;
+    }
+    .form-2 span {
+        font-size: 1.6rem;
+    }
+    .form-2 input {
+        width: 20rem;
+        height: 2rem;
+    }
+    .reg-form-1 img.img2 {
+        width: 78%;
+    }
+    .img3 {
+        height: 35rem;
+    }
+    .form-2 {
+        top: -23rem;
+        right: -11rem;
+    }
+    #email {
+        margin-left: 3.5rem;
+    }
+    .reg-form-1 img.img2 {
+        width: 78%;
+        margin-right: -3rem;
+    }
+    .sub-form-2 span {
+        font-size: 1.6rem;
+    }
+    .sub-form-2 input {
+        width: 20rem;
+        height: 4rem;
+      
+    }
+    .form-2 {
+        top: -23rem;
+        right: -13rem;
+    }
+    .checkbox img {
+        width: 80rem;
+    }
+    .sub-form-2 {
+        margin-bottom: 4rem;
+        top: -23rem;
+        left: 9rem;
+    }
+
+    .checkbox .last-form span {
+        font-size: 2rem;
+
+    }
+    input.submit {
+        width: 14rem;
+        font-size: 2rem;
+    }
+}
